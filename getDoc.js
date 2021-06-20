@@ -1,5 +1,5 @@
 
-let input = `bat dau tu <h4>Cau1`
+let input = `paste here`
 input = input.replace(/(^[ \t]*\n)/gm, "")
 for(let i = 0; i < input.length; i++) {
     let value;
