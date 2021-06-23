@@ -1,6 +1,12 @@
+let input = `paste here`;
+input = input.replace(/(^[ \t]*\n)/gm, "");
+for(let i = 0; i < input.length; i++) {
+    if(input.slice(i, i + 4) == "<h4>") {
+        input = input.slice(i);
+        break;
+    }
+}
 
-let input = `bat dau tu <h4>Cau1`
-input = input.replace(/(^[ \t]*\n)/gm, "")
 for(let i = 0; i < input.length; i++) {
     let value;
     if(input.slice(i, i + 3) === 'Câu') {
