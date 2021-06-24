@@ -13,8 +13,8 @@ for(let i = 0; i < input.length; i++) {
         let j = i;
         for (j = i; j < input.length; j++) {
             if(input.slice(j, j + 4) === '</p>') {
-                console.log(input.slice(i, i + 6) );
-                console.log(input.slice(i + 15, j ));
+                console.log(input.slice(i, i + 6));
+                console.log(input.slice(i + 71, j ));
                 for (let k = j; k < input.length; k++) {
                     if(input.slice(k, k + 5) === 'value') {
                         value = input[k + 7];
